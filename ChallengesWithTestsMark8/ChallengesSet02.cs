@@ -132,7 +132,33 @@ namespace ChallengesWithTestsMark8
 
         public long CountOfPositiveOddsBelowNumber(long number)
         {
-            
+            {
+                //var count = 0;
+
+                //if (number == 1 || number <= 0)
+                //{
+                //    return 0;
+                //}
+
+                //for (long i = number; i > 0; i--)
+                //{
+                //    if (i % 2 == 0)
+                //    {
+                //        count++;
+                //    }
+                //}
+
+                //return count;
+
+                if (number <= 0)
+                {
+                    return 0;
+                }
+                else
+                {
+                    return number / 2;
+                }
+            }
         }
     }
 }
