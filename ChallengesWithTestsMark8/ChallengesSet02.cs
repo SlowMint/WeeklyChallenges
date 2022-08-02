@@ -22,7 +22,8 @@ namespace ChallengesWithTestsMark8
 
         public bool IsNumberEven(int number)
         {
-            if (number / 2 == 0)
+         
+            if (number % 2 == 0)
             {
                 return true;
             }
@@ -113,12 +114,19 @@ namespace ChallengesWithTestsMark8
 
             var sum = 0;
 
+            if (numbers == null)
+            {
+                return false;
+            }
+
+
             for (int i = 0; i < numbers.Count; i++)
             {
                 sum += numbers[i];
             }
+            
 
-            if (sum % 2 != 0)
+            if (sum % 2 == 0)
             {
                 return false;
             }
@@ -126,6 +134,7 @@ namespace ChallengesWithTestsMark8
             {
                 return true;
             }
+
 
 
         }
