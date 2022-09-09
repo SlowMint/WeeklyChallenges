@@ -15,7 +15,7 @@ namespace ChallengesWithTestsMark8.Tests
         [InlineData(new string[] { "Alpha", "braVo", "charlie" }, "bravo", true, true)]
         [InlineData(new string[] { "Alpha", "bravo", "chArlie" }, "charlie", true, true)]
         [InlineData(new string[] { "AlPha", "alpha", "bravo", "charlie" }, "alpha", false, true)]
-        [InlineData(new string[] { "AlPha", "bravo", "charlie" }, "alpha", false, false)]
+        [InlineData(new string[] { "AlPha", "bravo", "charlie" }, "alpha", false, true)]
         [InlineData(new string[] { "alpha", "bravo", "charlie" }, "delta", true, false)]
         [InlineData(new string[] { null, "bravo", "charlie" }, "braVo", false, false)]
         [InlineData(new string[] { null, "bravo", "chArlie" }, "charliE", false, false)]
